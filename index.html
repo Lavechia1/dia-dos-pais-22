@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dia dos Pais 22</title>
+</head>
+<style>
+    main.dlc-cabecalho-lp-pais{
+        margin: 0 auto;
+        width: 100%;
+        max-width: 1200px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        /*background-color: red;*/
+    }
+    .dlc-topo{
+        max-width: 1040px;
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 13px;
+    }
+    .dlc-cabecalho-pais{
+        
+        font-size: 2.2rem;
+        height: 240px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 1200px;
+        width: 100%;
+        margin: 0 auto;
+        
+
+    }
+    .varalTexto{
+        font-family: futura-pt, sans-serif!important;
+        font-weight: 400;
+        font-style: normal;
+        color: black;
+    }
+    .dlc-imagem-topo img{
+        max-width: 1040px;
+        /*width: 100%;*/
+        margin: 0 auto;   
+        position: absolute;
+        
+    }
+    .dlc-img-camp{
+        opacity: 80%;
+    }
+    .dlc-imagem-titulo img{
+        max-width: 50% !important;
+        height: auto;       
+        margin: 0 auto;
+        align-items: center;
+        display: flex;
+        padding: 320px 0px;
+        position: relative;
+        
+    }
+    
+    
+    .dlc-sub-titulo{
+        font-family: playfair-display, serif;
+        font-weight: 500;
+        font-size: 32px;
+        color: black;
+        text-align: center;
+        margin-bottom: 20px;
+        padding: 15px;
+        
+    }
+
+    div.dlc-sub-titulo strong i {
+        font-style: italic!important;
+        font-family: playfair-display, serif;
+        font-weight: 500;
+    }
+
+    .dlc-texto{
+        font-family: playfair-display, serif!important;
+        font-weight: 400!important;
+        font-style: normal!important;
+        text-align: center;
+        max-width: 810px;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 40px;
+    }
+    .dlc-texto h3{
+        font-size: 1.875rem;
+        font-family: futura-pt, sans-serif!important;
+        font-weight: 500!important;
+        font-style: italic!important;
+        padding: 1.25rem;
+        text-decoration: none;
+
+    }
+    .dlc-texto span{
+        font-size: 1.375rem;
+        font-family: playfair-display, serif!important;
+        font-weight: 400!important;
+        font-style: normal!important;
+        margin-bottom: 1.25rem;
+        text-decoration: none;
+
+    }
+    div.dlc-texto span{
+        font-family: playfair-display, serif!important;
+        font-weight: 400!important;
+        font-style: normal!important;
+    }
+    .dlc-grid{
+        max-width: 1040px;
+        width: 100%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        
+    }
+   
+    .dlc-grid img{
+        max-width: 512px;
+        width: 100%;
+        
+    }
+    .dlc-texto-bloco-1{
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        /*padding: 40px;*/
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: 26px;
+    }
+    .dlc-texto-bloco-1 span{
+        font-family: playfair-display, serif!important;
+        font-weight: 400!important;
+        font-style: normal!important;
+        font-size: 24px;
+        padding: 25px 70px 0px;
+        margin-top: -40px;
+        margin-bottom: -20px;
+    }
+    .dlc-texto-bloco-1 h3{
+        font-family: playfair-display, serif!important;
+        font-weight: 500!important;
+        font-style: italic!important;
+        color: #8A4A3D;
+        font-size: 43px;
+        padding: 30px;
+    }
+    
+    .dlc-trocar{
+        display: flex;
+        order: 2;
+        
+    }
+    .dlc-img-bloco-1 img{
+        max-width: 512px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .content-rewards-vantagens {
+        box-sizing: border-box;
+        padding: 0 15px 15px 15px;
+        background-color: #fff;
+
+    }
+    .grid-vantagens {
+        display: grid;
+        max-width: 1040px;
+        grid-template-columns: repeat(4, 1fr);
+        margin: 0 auto;
+        margin-top: 1.5rem;
+        gap: 21px;
+    }
+    .box-vantagens {
+        border-radius: 10px;
+        box-sizing: border-box;
+        padding-bottom: 20px;
+        text-align: center;
+    }
+    .box-vantagens-1 {
+        max-width: 248px;
+        width: 100%;
+        box-sizing: border-box;
+        padding-bottom: 20px;
+        text-align: center;
+        background-color: #F0F0F0;
+    }
+    .box-vantagens-1 img{
+        padding: 15px;
+    }
+    .ver_mais {
+        /* margin: 0 auto; */
+        text-align: center;
+        margin: 50px 0px;
+    }
+    .ver_mais a {
+        font-family: futura-pt, sans-serif;
+        padding: 10px;
+        color: white;
+        background: black;
+        text-align: center;
+        font-size: 16px;
+        width: 27vw;
+        margin: 4.4vw auto;
+        max-width: 190px;
+        text-decoration: none;
+        border: 1px solid black;
+        margin: 0 auto;
+        padding: 10px 10px;
+
+    }
+    .ver_mais a:hover {
+        color: black;
+        background: white;
+        transition: 0.5s;
+
+    }
+    .dlc-foto-resp{
+        max-width: 212px;
+        width: 100%;
+    }
+    .dlc-varal-produtos{
+        margin-bottom: 25px;
+    }
+
+
+    @media screen and (max-width: 600px) {
+        .dlc-grid{
+            grid-template-columns: 1fr;
+            justify-items: center;
+            
+        }
+        .dlc-topo{
+            margin-top: 75px;
+        }
+        .content-rewards-vantagens {
+            margin-top: 1.5rem;
+            padding: 0;
+        }
+        .grid-vantagens {
+            width: 100%;
+            gap: 1.2rem;
+            grid-template-columns: repeat(2, 1fr);
+        }
+        .box-vantagens {
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 25px;
+
+        }
+        .dlc-foto-resp{
+            max-width: 100%;
+        }
+        .dlc-trocar{
+        display: flex;
+        order:initial;
+        
+        }
+        main.dlc-cabecalho-lp-pais{
+            margin-top: 10px;
+        }
+        .dlc-texto{
+            padding: 10px;
+            font-size: 20px;
+        }
+        .dlc-sub-titulo{
+            font-size: 26px;
+            margin-top: 100px;
+        }
+        .dlc-imagem-titulo img{
+            padding: 100px 0px  ; 
+        }
+        .dlc-texto-bloco-1 span{
+            padding: 0 20px;
+        }
+        .dlc-texto-bloco-1 h3{
+            padding: 70px 0px;
+        }
+
+        
+    }
+
+    @media screen and (min-width: 688px) and (max-width: 1031px) {
+        .dlc-imagem-titulo img{
+            padding: 230px 0px  ; 
+        }
+    }
+
+    @media screen and (min-width: 800px) and (max-width: 1024px) {
+        .dlc-imagem-titulo img{
+            padding: 280px 0px  ; 
+        }
+        .dlc-sub-titulo{
+            padding: 70px 0px 0px;
+        }
+    }
+   
+    
+
+</style>
+<body>
+    <main class="dlc-cabecalho-lp-pais">
+        <section class="dlc-topo">
+            
+            <div class="dlc-imagem-topo">
+                <a href="https://www.shop2gether.com.br/catalog/category/view/id/135556/?dir=asc&order=position">
+                    <img class="dlc-img-camp" src="https://dpmhyxrn33nxe.cloudfront.net/landpage/180722_dia-dos-pais/Grupo%206.png" alt="">
+                </a>
+            
+                <div class="dlc-imagem-titulo">
+                    <a href="https://www.shop2gether.com.br/catalog/category/view/id/135556/?dir=asc&order=position">
+                        <img src="https://dpmhyxrn33nxe.cloudfront.net/landpage/180722_dia-dos-pais/titulo-pais.png" alt="">
+                    
+                    </a>
+                    
+                </div>
+                
+            </div>
+            <div class="dlc-sub-titulo">
+                <a href="https://www.shop2gether.com.br/catalog/category/view/id/135556/?dir=asc&order=position"></a>
+                <strong><i>Confira nosso gift guide</i></strong>
+            </div>
+            
+        </section>
+        <div class="dlc-texto">
+            <a href="https://www.shop2gether.com.br/catalog/category/view/id/135556/?dir=asc&order=position"></a>
+                <span>
+                    De olho nas principais tendências da moda masculina, destacamos uma curadoria de roupas e acessórios úteis e desejáveis para presentear neste Dia dos Pais. 
+                    Abaixo, você encontra nosso gift guide com bons casacos, calças com modelagens atualizadas, sapatos confortáveis, além de dezenas de peças ótimas para o dia a dia 
+                    focadas em cinco perfis diferentes de pais. Deslize para conferir e acerte em cheio no presente!
+            </span>
+        </div>
+
+        <div class="dlc-grid">
+            <div class="dlc-img-bloco-1">
+                <a href="https://www.shop2gether.com.br/catalog/category/view/id/136881/?dir=asc&order=position">
+                    <img src="https://dpmhyxrn33nxe.cloudfront.net/landpage/180722_dia-dos-pais/Grupo%201.png" alt="">
+                </a>
+            </div>
+            
+            
+            <div class="dlc-texto-bloco-1">
+                <h3>Empreendedor</h3>
+                <span>                        
+                    A paternidade transforma um homem – e o trabalho também. Alfaiataria bem cortada acompanha (com classe) empreendedores e executivos contemporâneos
+                </span>
+                <div class="ver_mais">
+                    <a href="https://www.shop2gether.com.br/catalog/category/view/id/136881/?dir=asc&order=position">
+                        CLICK 2'SHOP
+                    </a>
+                </div>
+            </div>
+
+        </div>
+        <div class="dlc-varal-produtos">
+
+            <div class="content-rewards-vantagens">
+                <div class="grid-vantagens">
+                    <div class="box-vantagens">
+                        <a href="https://www.shop2gether.com.br/catalog/product/view/id/1585223">
+                            <img class="dlc-foto-resp" src="https://dpmhyxrn33nxe.cloudfront.net/landpage/180722_dia-dos-pais/Produto1.png"
+                                alt="">
+
+                            <div class="varalTexto">
+                                <strong>JOHN JOHN</strong>
+                                <br>
+                                <s>DE R$268,00</s><br>  <font color="#FF0000">POR R$200,90</font>
+
+                            </div>
+                        </a>
+                    </div>
+                    <div class="box-vantagens">
+                        <a href="https://www.shop2gether.com.br/catalog/product/view/id/1000540">
+                            <img class="dlc-foto-resp" src="https://dpmhyxrn33nxe.cloudfront.net/landpage/180722_dia-dos-pais/Produto2.png"
+                                alt="">
+
+                            <div class="varalTexto">
+                                <strong>RICARDO ALMEIDA</strong>
+                                <br>
+                                10X R$281,80
+
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="box-vantagens">
+                        <a href="https://www.shop2gether.com.br/catalog/product/view/id/1538066">
+                            <img class="dlc-foto-resp" src="https://dpmhyxrn33nxe.cloudfront.net/landpage/180722_dia-dos-pais/Produto3.png"
+                                alt="">
+
+                            <div class="varalTexto">
+                                <strong>NAUTICA</strong>
+                                <br>
+                                8X R$55,97
+
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="box-vantagens">
+                        <a href="https://www.shop2gether.com.br/catalog/product/view/id/1517537">
+                            <img class="dlc-foto-resp" src="https://dpmhyxrn33nxe.cloudfront.net/landpage/180722_dia-dos-pais/Produto4.png"
+                                alt="">
+
+                            <div class="varalTexto">
+                                <strong>BROGAN</strong>
+                                <br>
+                                10x R$83,00
+
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="dlc-grid ">
+            <div class="dlc-img-bloco-1 dlc-trocar">
+                <a href="https://www.shop2gether.com.br/catalog/category/view/id/136934/?dir=asc&order=position">
+                    <img src="https://dpmhyxrn33nxe.cloudfront.net/landpage/180722_dia-dos-pais/Grupo%202.png" alt="">
+                </a>
+            </div>
+            
+            
+            <div class="dlc-texto-bloco-1">
+                <h3>Vanguardista</h3>
+                <span>                        
+                    Que tal uma estamparia forte e ousada, ao lado de sandálias estruturadas que combinam com tudo?
+                </span>
+                <div class="ver_mais">
+                    <a href="https://www.shop2gether.com.br/catalog/category/view/id/136934/?dir=asc&order=position">
+                        CLICK 2'SHOP
+                    </a>
+                </div>
+            </div>
+
+            
+
+        </div>
+        <div class="dlc-varal-produtos">
+
+            <div class="content-rewards-vantagens">
+                <div class="grid-vantagens">
+                    <div class="box-vantagens-1">
+                        <a href="https://www.shop2gether.com.br/catalog/product/view/id/1498423">
+                            <img class="dlc-foto-resp" src="https://dpmhyxrn33nxe.cloudfront.net/landpage/180722_dia-dos-pais/produto%205.png"
+                                alt="">
+
+                            <div class="varalTexto">
+                                <strong>HUGO</strong>
+                                <br>
+                                7X R$51,43
+
+                            </div>
+                        </a>
+                    </div>
+                    <div class="box-vantagens-1">
+                        <a href="https://www.shop2gether.com.br/catalog/product/view/id/1589904">
+                            <img class="dlc-foto-resp" src="https://dpmhyxrn33nxe.cloudfront.net/landpage/180722_dia-dos-pais/produto%206.png"
+                                alt="">
+
+                            <div class="varalTexto">
+                                <strong>TORINNO</strong>
+                                <br>
+                                <s>DE R$429,00</s><br>  <font color="#FF0000">POR R$320,90</font>
+
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="box-vantagens-1">
+                        <a href="https://www.shop2gether.com.br/catalog/product/view/id/1589986">
+                            <img class="dlc-foto-resp" src="https://dpmhyxrn33nxe.cloudfront.net/landpage/180722_dia-dos-pais/produto%207.png"
+                                alt="">
+
+                            <div class="varalTexto">
+                                <strong>TORINNO</strong>
+                                <br>
+                                <s>DE R$359,00</s><br>  <font color="#FF0000">POR R$268,90</font>
+
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="box-vantagens-1">
+                        <a href="https://www.shop2gether.com.br/catalog/product/view/id/1474955">
+                            <img class="dlc-foto-resp" src="https://dpmhyxrn33nxe.cloudfront.net/landpage/180722_dia-dos-pais/produto%208.png"
+                                alt="">
+
+                            <div class="varalTexto">
+                                <strong>RIDER</strong>
+                                <br>
+                                4X R$57,50
+
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="dlc-grid">
+            <div class="dlc-img-bloco-1">
+                <a href="https://www.shop2gether.com.br/catalog/category/view/id/136887/?dir=asc&order=position">
+                    <img src="https://dpmhyxrn33nxe.cloudfront.net/landpage/180722_dia-dos-pais/Grupo%203.png" alt="">
+                </a>
+            </div>
+            
+            
+            <div class="dlc-texto-bloco-1">
+                <h3>Aventureiro</h3>
+                <span>                        
+                    Ainda não inventaram nada mais útil e acolhedor do que uma boa jaqueta puffer para a prática de esportes ao ar livre e momentos de aventura em geral, concorda?
+                </span>
+                <div class="ver_mais">
+                    <a href="https://www.shop2gether.com.br/catalog/category/view/id/136887/?dir=asc&order=position">
+                        CLICK 2'SHOP
+                    </a>
+                </div>
+            </div>
+
+        </div>
+        <div class="dlc-varal-produtos">
+
+            <div class="content-rewards-vantagens">
+                <div class="grid-vantagens">
+                    <div class="box-vantagens">
+                        <a href="https://www.shop2gether.com.br/catalog/product/view/id/1296990">
+                            <img class="dlc-foto-resp" src="https://dpmhyxrn33nxe.cloudfront.net/landpage/180722_dia-dos-pais/Produto9.png"
+                                alt="">
+
+                            <div class="varalTexto">
+                                <strong>HUGO</strong>
+                                <br>
+                                10X R$98,00
+
+                            </div>
+                        </a>
+                    </div>
+                    <div class="box-vantagens">
+                        <a href="https://www.shop2gether.com.br/catalog/product/view/id/1572123">
+                            <img class="dlc-foto-resp" src="https://dpmhyxrn33nxe.cloudfront.net/landpage/180722_dia-dos-pais/Produto10.png"
+                                alt="">
+
+                            <div class="varalTexto">
+                                <strong>THE NORTH FACE</strong>
+                                <br>
+                                10X R$139,00
+
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="box-vantagens">
+                        <a href="https://www.shop2gether.com.br/catalog/product/view/id/1381276">
+                            <img class="dlc-foto-resp" src="https://dpmhyxrn33nxe.cloudfront.net/landpage/180722_dia-dos-pais/Produto11.png"
+                                alt="">
+
+                            <div class="varalTexto">
+                                <strong>HUGO</strong>
+                                <br>
+                                <s>DE R$723,99</s><br>  <font color="#FF0000">POR R$433,90</font>
+
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="box-vantagens">
+                        <a href="https://www.shop2gether.com.br/catalog/product/view/id/1535730">
+                            <img class="dlc-foto-resp" src="https://dpmhyxrn33nxe.cloudfront.net/landpage/180722_dia-dos-pais/Produto12.png"
+                                alt="">
+
+                            <div class="varalTexto">
+                                <strong>PUMA</strong>
+                                <br>
+                                9X R$55,54
+
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="dlc-grid ">
+            <div class="dlc-img-bloco-1 dlc-trocar">
+                <a href="https://www.shop2gether.com.br/catalog/category/view/id/136882/?dir=asc&order=position">
+                    <img src="https://dpmhyxrn33nxe.cloudfront.net/landpage/180722_dia-dos-pais/Grupo%204.png" alt="">
+                </a>
+            </div>
+            
+            
+            <div class="dlc-texto-bloco-1">
+                <h3>Caseiro</h3>
+                <span>                        
+                    Ele é do tipo hospitaleiro, daqueles que amam receber os amigos? Então, invista em looks quentinhos e casuais, como tricôs e peças gostosas de homewear
+                </span>
+                <div class="ver_mais">
+                    <a href="https://www.shop2gether.com.br/catalog/category/view/id/136882/?dir=asc&order=position">
+                        CLICK 2'SHOP
+                    </a>
+                </div>
+            </div>
+
+            
+
+        </div>
+        <div class="dlc-varal-produtos">
+
+            <div class="content-rewards-vantagens">
+                <div class="grid-vantagens">
+                    <div class="box-vantagens-1">
+                        <a href="https://www.shop2gether.com.br/catalog/product/view/id/1583452">
+                            <img class="dlc-foto-resp" src="https://dpmhyxrn33nxe.cloudfront.net/landpage/180722_dia-dos-pais/produto%2013.png"
+                                alt="">
+
+                            <div class="varalTexto">
+                                <strong>PIA LAUS</strong>
+                                <br>
+                                10X R$239,00
+
+                            </div>
+                        </a>
+                    </div>
+                    <div class="box-vantagens-1">
+                        <a href="https://www.shop2gether.com.br/catalog/product/view/id/1573937">
+                            <img class="dlc-foto-resp" src="https://dpmhyxrn33nxe.cloudfront.net/landpage/180722_dia-dos-pais/produto%2014.png"
+                                alt="">
+
+                            <div class="varalTexto">
+                                <strong>'2ESSENTIAL</strong>
+                                <br>
+                                <s>DE R$300,00</s><br>  <font color="#FF0000">POR R$209,90</font>
+
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="box-vantagens-1">
+                        <a href="https://www.shop2gether.com.br/catalog/product/view/id/1581913">
+                            <img class="dlc-foto-resp" src="https://dpmhyxrn33nxe.cloudfront.net/landpage/180722_dia-dos-pais/produto%2015.png"
+                                alt="">
+
+                            <div class="varalTexto">
+                                <strong>ARMANI EXCHANGE</strong>
+                                <br>
+                                10X R$125,04
+
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="box-vantagens-1">
+                        <a href="https://www.shop2gether.com.br/catalog/product/view/id/1526991">
+                            <img class="dlc-foto-resp" src="https://dpmhyxrn33nxe.cloudfront.net/landpage/180722_dia-dos-pais/produto%2016.png"
+                                alt="">
+
+                            <div class="varalTexto">
+                                <strong>LACOSTE</strong>
+                                <br>
+                                8X R$53,63
+
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="dlc-grid">
+            <div class="dlc-img-bloco-1">
+                <a href="https://www.shop2gether.com.br/catalog/category/view/id/137170/?dir=asc&order=position">
+                    <img src="https://dpmhyxrn33nxe.cloudfront.net/landpage/180722_dia-dos-pais/Grupo%205.png" alt="">
+                </a>
+            </div>
+            
+            
+            <div class="dlc-texto-bloco-1">
+                <h3>Esportivo</h3>
+                <span>                        
+                    Moletons, agasalhos e peças com pegada sportwear são sucesso garantido para presentear pais que procuram manter a forma
+                </span>
+                <div class="ver_mais">
+                    <a href="https://www.shop2gether.com.br/catalog/category/view/id/137170/?dir=asc&order=position">
+                        CLICK 2'SHOP
+                    </a>
+                </div>
+            </div>
+
+        </div>
+        <div class="dlc-varal-produtos">
+
+            <div class="content-rewards-vantagens">
+                <div class="grid-vantagens">
+                    <div class="box-vantagens">
+                        <a href="https://www.shop2gether.com.br/catalog/product/view/id/1530333">
+                            <img class="dlc-foto-resp" src="https://dpmhyxrn33nxe.cloudfront.net/landpage/180722_dia-dos-pais/Produto17.png"
+                                alt="">
+
+                            <div class="varalTexto">
+                                <strong>KOUDA</strong>
+                                <br>
+                                3X R$53,53
+
+                            </div>
+                        </a>
+                    </div>
+                    <div class="box-vantagens">
+                        <a href="https://www.shop2gether.com.br/catalog/product/view/id/1583618">
+                            <img class="dlc-foto-resp" src="https://dpmhyxrn33nxe.cloudfront.net/landpage/180722_dia-dos-pais/Produto18.png"
+                                alt="">
+
+                            <div class="varalTexto">
+                                <strong>ADIDAS</strong>
+                                <br>
+                                <s>DE R$599,99</s><br>  <font color="#FF0000">POR R$418,90</font>
+
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="box-vantagens">
+                        <a href="https://www.shop2gether.com.br/catalog/product/view/id/1583619">
+                            <img class="dlc-foto-resp" src="https://dpmhyxrn33nxe.cloudfront.net/landpage/180722_dia-dos-pais/Produto19.png"
+                                alt="">
+
+                            <div class="varalTexto">
+                                <strong>ADIDAS</strong>
+                                <br>
+                                <s>DE R$399,99</s><br>  <font color="#FF0000">POR R$278,90</font>
+
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="box-vantagens">
+                        <a href="https://www.shop2gether.com.br/catalog/product/view/id/1560109">
+                            <img class="dlc-foto-resp" src="https://dpmhyxrn33nxe.cloudfront.net/landpage/180722_dia-dos-pais/Produto20.png"
+                                alt="">
+
+                            <div class="varalTexto">
+                                <strong>ASICS</strong>
+                                <br>
+                                <s>DE R$549,99</s><br>  <font color="#FF0000">POR R$383,90</font>
+
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    
+</body>
+</html>
